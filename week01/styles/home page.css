@@ -1,0 +1,75 @@
+/* === Normalize and Reset === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* === General Styles === */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #333;
+    text-align: center;
+}
+
+/* === Header === */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background: #007bff;
+    color: white;
+}
+
+.hamburger {
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    display: none;
+    /* Hidden by default */
+}
+
+.nav-menu ul {
+    list-style: none;
+    display: flex;
+}
+
+.nav-menu li {
+    margin: 0 15px;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+}
+
+/* === Mobile View === */
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        background: #007bff;
+        width: 100%;
+        left: 0;
+        top: 60px;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+}
+
+/* === Dark Mode === */
+.dark-mode {
+    background-color: #222;
+    color: #fff;
+}
