@@ -10,3 +10,4 @@ document.getElementById("last-modified").textContent = document.lastModified;
 document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("weather-data").textContent = "Sunny, 27°C";
 });
+document.getElementById("last-modified").textContent = document.lastModified;

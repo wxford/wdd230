@@ -98,12 +98,55 @@ section {
 }
 
 /* Footer */
-footer {
-    background: #333;
-    color: white;
-    text-align: center;
-    padding: 10px;
-}
+ footer {
+     background-color: #333;
+     color: white;
+     text-align: center;
+     padding: 20px;
+ }
+
+ .footer-contact {
+     margin-bottom: 15px;
+ }
+
+ .footer-contact h3,
+ .social-media h3 {
+     font-size: 18px;
+ }
+
+ .footer-contact a {
+     color: #ff9800;
+     text-decoration: none;
+ }
+
+ .footer-contact a:hover {
+     text-decoration: underline;
+ }
+
+ .social-media {
+     margin: 10px 0;
+ }
+
+ .social-media a {
+     margin: 0 10px;
+     display: inline-block;
+ }
+
+ .social-media img {
+     width: 30px;
+     /* Adjust the size of icons */
+     height: 30px;
+     transition: transform 0.3s;
+ }
+
+ .social-media img:hover {
+     transform: scale(1.2);
+ }
+
+ .footer-info {
+     font-size: 14px;
+     opacity: 0.8;
+ }
 
 /* Responsive Design */
 @media (min-width: 768px) {
