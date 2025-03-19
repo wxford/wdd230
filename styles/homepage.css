@@ -1,75 +1,130 @@
-/* === Normalize and Reset === */
+/* Basic Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* === General Styles === */
 body {
     font-family: Arial, sans-serif;
-    background-color: #fff;
-    color: #333;
-    text-align: center; 
+    line-height: 1.6;
+    padding: 20px;
+    background-color: #ffffff;
+    color: #000000;
 }
 
-/* === Header === */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
-    background: #007bff;
-    color: white;
+    margin-bottom: 20px;
 }
 
-.hamburger {
+nav {
+    display: flex;
+    align-items: center;
+}
+
+#hamburger-btn {
+    display: none;
     font-size: 24px;
     background: none;
     border: none;
-    color: white;
     cursor: pointer;
-    display: none;
-    /* Hidden by default */
 }
 
-.nav-menu ul {
-    list-style: none;
+#nav-menu {
     display: flex;
+    list-style: none;
 }
 
-.nav-menu li {
-    margin: 0 15px;
+#nav-menu li {
+    margin-left: 20px;
 }
 
-.nav-menu a {
-    color: white;
+#nav-menu li a {
+    text-decoration: none;
+    color: #000000;
+}
+
+#dark-mode-toggle {
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+body.dark-mode #nav-menu li a {
+    color: #ffffff;
+}
+
+/* Footer Styles */
+footer {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+    border-top: 1px solid #ddd;
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #333;
+}
+
+footer a {
+    color: #007BFF;
     text-decoration: none;
 }
 
-/* === Mobile View === */
+footer a:hover {
+    text-decoration: underline;
+}
+
+body.dark-mode footer {
+    background-color: #333;
+    border-top: 1px solid #555;
+}
+
+body.dark-mode footer p {
+    color: #fff;
+}
+
+body.dark-mode footer a {
+    color: #1e90ff;
+}
+
+/* Mobile View */
 @media (max-width: 768px) {
-    .hamburger {
+    #hamburger-btn {
         display: block;
     }
 
-    .nav-menu {
+    #nav-menu {
         display: none;
         flex-direction: column;
         position: absolute;
-        background: #007bff;
-        width: 100%;
-        left: 0;
         top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #f4f4f4;
     }
 
-    .nav-menu.active {
+    #nav-menu.active {
         display: flex;
     }
-}
 
-/* === Dark Mode === */
-.dark-mode {
-    background-color: #222;
-    color: #fff;
+    #nav-menu li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    body.dark-mode #nav-menu {
+        background-color: #333333;
+    }
 }
