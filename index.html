@@ -45,6 +45,35 @@
             <h2>Student Name: Bockarie Junior Mansaray</h2>
             <p>Explore my web development projects and learning journey.</p>
         </section>
+        <!-- Hero Image Section -->
+        <section class="hero">
+            <picture>
+                <!-- Mobile view (up to 400px) -->
+                <source srcset="images/temple-mobile.webp" media="(max-width: 400px)">
+                <!-- Larger view (up to 960px) -->
+                <source srcset="images/temple-desktop.webp">
+                <!-- Fallback image -->
+                <img src="images/temple01.webp" alt="Temple Hero Image">
+            </picture>
+            <!-- Overlay Text -->
+            <div class="overlay-text">
+                <h2>Your Favorite Temple</h2>
+            </div>
+        </section>
+
+        <!-- Page Visits Counter -->
+        <section class="visits">
+            <h2>Page Visits</h2>
+            <p>Total Page Visits: <span id="visit-count">0</span></p>
+        </section>
+
+        <!-- Google Map Section -->
+        <section class="map">
+            <h2>Location Map</h2>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12345.678901234567!2d-111.12345678901234!3d40.12345678901234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x874c123456789012%3A0x1234567890abcdef!2sYour%20Hometown!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </section>
 
     </main>
 
