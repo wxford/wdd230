@@ -33,7 +33,8 @@ header {
     background-color: rgba(0, 0, 0, 0.5);
     padding: 1rem;
     font-size: 1.5rem;
-    white-space: nowrap; /* Prevents text wrapping */
+    white-space: nowrap;
+    /* Prevents text wrapping */
 }
 
 /* Page Visits Counter */
@@ -51,7 +52,8 @@ header {
 
 .map iframe {
     width: 100%;
-    max-width: 960px; /* Limits map width to 960px */
+    max-width: 960px;
+    /* Limits map width to 960px */
     height: 450px;
 }
 
