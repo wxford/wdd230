@@ -1,0 +1,117 @@
+:root {
+    --primary-color: #396e94;
+    --secondary-color: #e7c24f;
+    --accent-color: #a43312;
+    --text-color: #2c3e50;
+    --background-color: #f9f9f9;
+    --error-color: #ff4444;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+form {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+fieldset {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+legend {
+    padding: 0 0.5rem;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.form-group {
+    margin-bottom: 1.2rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+input:focus {
+    outline: 2px solid var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+.range-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+input[type="range"] {
+    width: 100%;
+    margin: 0.5rem 0;
+}
+
+output {
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: var(--accent-color);
+}
+
+.error-message {
+    color: var(--error-color);
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+    display: block;
+}
+
+@media (min-width: 600px) {
+    .range-group {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    input[type="range"] {
+        flex-grow: 1;
+        margin: 0 1rem;
+    }
+}
