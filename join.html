@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Our Chamber | Your City Chamber of Commerce</title>
+    <meta name="description"
+        content="Join the Your City Chamber of Commerce to grow your business and connect with our community.">
+    <link rel="stylesheet" href="styles/base.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <img src="images/magnificent3.jpg" alt="Chamber of Commerce Logo" class="logo">
+            <h1>Your City Chamber of Commerce</h1>
+            <nav>
+                <button id="hamburger-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+                <ul id="primary-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li class="active"><a href="join.html">Join</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="join-main">
+        <h2>Join the Chamber</h2>
+
+        <div class="join-container">
+            <form id="join-form" method="get" action="thankyou.html" class="join-form">
+                <fieldset>
+                    <legend>Personal Information</legend>
+
+                    <label>First Name*
+                        <input type="text" name="first-name" id="first-name" required>
+                    </label>
+
+                    <label>Last Name*
+                        <input type="text" name="last-name" id="last-name" required>
+                    </label>
+
+                    <label>Title/Position
+                        <input type="text" name="title" id="title" pattern="[a-zA-Z\- ]{7,}"
+                            title="Title must be at least 7 characters and contain only letters, hyphens, and spaces">
+                    </label>
+
+                    <label>Email*
+                        <input type="email" name="email" id="email" required placeholder="example@yourbusiness.com">
+                    </label>
+
+                    <label>Phone Number*
+                        <input type="tel" name="phone" id="phone" required>
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Business Information</legend>
+
+                    <label>Business/Organization Name*
+                        <input type="text" name="business-name" id="business-name" required>
+                    </label>
+
+                    <label>Business Description
+                        <textarea name="business-description" id="business-description" rows="4"></textarea>
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Membership Level</legend>
+
+                    <div class="membership-options">
+                        <label class="membership-option">
+                            <input type="radio" name="membership-level" value="np" checked>
+                            <span class="radio-label">NP Membership (Non-Profit)</span>
+                            <span class="radio-desc">No fee</span>
+                        </label>
+
+                        <label class="membership-option">
+                            <input type="radio" name="membership-level" value="bronze">
+                            <span class="radio-label">Bronze Membership</span>
+                            <span class="radio-desc">$100/year</span>
+                        </label>
+
+                        <label class="membership-option">
+                            <input type="radio" name="membership-level" value="silver">
+                            <span class="radio-label">Silver Membership</span>
+                            <span class="radio-desc">$250/year</span>
+                        </label>
+
+                        <label class="membership-option">
+                            <input type="radio" name="membership-level" value="gold">
+                            <span class="radio-label">Gold Membership</span>
+                            <span class="radio-desc">$500/year</span>
+                        </label>
+                    </div>
+                </fieldset>
+
+                <input type="hidden" name="timestamp" id="timestamp">
+
+                <button type="submit" class="submit-btn">Submit Application</button>
+            </form>
+
+            <aside class="membership-benefits">
+                <h3>Membership Benefits</h3>
+
+                <div class="benefit-level">
+                    <h4>NP Membership</h4>
+                    <ul>
+                        <li>Listing in our online directory</li>
+                        <li>Access to member-only resources</li>
+                        <li>Monthly newsletter</li>
+                    </ul>
+                </div>
+
+                <div class="benefit-level">
+                    <h4>Bronze Membership</h4>
+                    <ul>
+                        <li>All NP benefits plus:</li>
+                        <li>Business training workshops (2/year)</li>
+                        <li>10% discount on chamber events</li>
+                        <li>Social media shoutouts</li>
+                    </ul>
+                </div>
+
+                <div class="benefit-level">
+                    <h4>Silver Membership</h4>
+                    <ul>
+                        <li>All Bronze benefits plus:</li>
+                        <li>Business training workshops (4/year)</li>
+                        <li>20% discount on chamber events</li>
+                        <li>Featured in monthly newsletter</li>
+                        <li>Access to premium resources</li>
+                    </ul>
+                </div>
+
+                <div class="benefit-level">
+                    <h4>Gold Membership</h4>
+                    <ul>
+                        <li>All Silver benefits plus:</li>
+                        <li>VIP access to all chamber events</li>
+                        <li>Homepage spotlight feature (quarterly)</li>
+                        <li>Dedicated business consultant</li>
+                        <li>Networking event hosting privileges</li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+        <section class="hero">
+            <img src="images/your-hero-image.jpg" alt="Descriptive text about your chamber of commerce">
+            <div class="hero-overlay">
+                <div class="hero-content">
+                    <h2>Your Chamber of Commerce</h2>
+                    <p>Supporting local businesses and community growth</p>
+                    <a href="join.html" class="hero-btn">Join Today</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-contact">
+                <img src="images/magnificent3.jpg" alt="Chamber of Commerce Logo" class="footer-logo">
+                <p>Your City Chamber of Commerce</p>
+                <p>123 Main Street, Your City, State 12345</p>
+                <p>info@yourcitychamber.org</p>
+                <p>(555) 123-4567</p>
+            </div>
+
+            <div class="footer-info">
+                <p>&copy; <span id="current-year"></span> Your City Chamber</p>
+                <p>Your Name</p>
+                <p>WDD 230 Project</p>
+                <p id="last-modified">Last Modified: </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Set timestamp when page loads
+        document.getElementById('timestamp').value = new Date().toISOString();
+
+        // Current year for footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        // Last modified date
+        document.getElementById('last-modified').textContent += document.lastModified;
+
+        // Hamburger menu functionality
+        const hamburger = document.getElementById('hamburger-menu');
+        const nav = document.getElementById('primary-nav');
+
+        hamburger.addEventListener('click', () => {
+            nav.classList.toggle('show');
+            hamburger.classList.toggle('open');
+        });
+    </script>
+</body>
+
+</html>

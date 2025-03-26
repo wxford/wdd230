@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You | Your City Chamber of Commerce</title>
+    <meta name="description" content="Thank you for joining the Your City Chamber of Commerce">
+    <link rel="stylesheet" href="styles/base.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <img src="images/logo.png" alt="Chamber of Commerce Logo" class="logo">
+            <h1>Your City Chamber of Commerce</h1>
+            <nav>
+                <button id="hamburger-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+                <ul id="primary-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li class="active"><a href="join.html">Join</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="thankyou-main">
+        <div class="thankyou-container">
+            <h2>Thank You for Joining!</h2>
+            <p>We've received your application to join the Your City Chamber of Commerce.</p>
+            <p>Our team will review your information and contact you within 2 business days to complete your membership.
+            </p>
+            <p>In the meantime, feel free to explore our <a href="directory.html">member directory</a> or check out
+                upcoming <a href="index.html#events">events</a>.</p>
+            <a href="index.html" class="home-btn">Return to Home</a>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-contact">
+                <img src="images/logo.png" alt="Chamber of Commerce Logo" class="footer-logo">
+                <p>Your City Chamber of Commerce</p>
+                <p>123 Main Street, Your City, State 12345</p>
+                <p>info@yourcitychamber.org</p>
+                <p>(555) 123-4567</p>
+            </div>
+
+            <div class="footer-info">
+                <p>&copy; <span id="current-year"></span> Your City Chamber</p>
+                <p>Your Name</p>
+                <p>WDD 230 Project</p>
+                <p id="last-modified">Last Modified: </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Current year for footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        // Last modified date
+        document.getElementById('last-modified').textContent += document.lastModified;
+
+        // Hamburger menu functionality
+        const hamburger = document.getElementById('hamburger-menu');
+        const nav = document.getElementById('primary-nav');
+
+        hamburger.addEventListener('click', () => {
+            nav.classList.toggle('show');
+            hamburger.classList.toggle('open');
+        });
+    </script>
+</body>
+
+</html>
