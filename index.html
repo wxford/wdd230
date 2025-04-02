@@ -4,29 +4,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bockarie Junior Mansaray WDD230 web frontend developement</title>
+    <title>Bockarie Junior Mansaray WDD230 Web Frontend Development</title>
+    <meta name="description" content="WDD 230 course home page with weather and dynamic links">
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
 </head>
 
 <body>
     <header>
-        <h1>Course Home Page</h1>
+        <h1>Bockarie Junior Mansaray</h1>
+        <img src="images/mag.jpg" alt="Profile Picture">
     </header>
 
+    <nav>
+        <!-- Navigation content here -->
+    </nav>
+
     <main>
+        <!-- Weather Section -->
+        <section class="card">
+            <h2>Weather Information</h2>
+            <div id="weather">
+                <div id="weather-icon"></div>
+                <div id="temperature"></div>
+                <div id="condition"></div>
+            </div>
+        </section>
+
+        <!-- Learning Activities -->
+        <section class="card">
+            <h2>Learning Activities</h2>
+            <div id="activities"></div>
+        </section>
+
         <!-- Hero Image Section -->
         <section class="hero">
             <picture>
-                <!-- Mobile view (up to 400px) -->
                 <source srcset="images/temple-mobile.webp" media="(max-width: 400px)">
-                <!-- Larger view (up to 960px) -->
                 <source srcset="images/aba_nigeria_temple_lds.jpeg">
-                <!-- Fallback image -->
                 <img src="images/temple01.webp" alt="Temple Hero Image">
             </picture>
-            <!-- Overlay Text -->
             <div class="overlay-text">
-                <h2>Aba nigeria temple.</h2>
+                <h2>Aba Nigeria Temple</h2>
             </div>
         </section>
 
@@ -46,10 +66,13 @@
     </main>
 
     <footer>
-        <p>&copy; 2023 Course Home Page</p>
+        <p>&copy; <span id="currentyear"></span> | Bockarie Junior Mansaray | Sierra Leone</p>
+        <p id="lastModified"></p>
     </footer>
 
-    <script src="scripts/getDates.js"></script>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/links.js"></script>
 </body>
 
 </html>
