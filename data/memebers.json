@@ -1,67 +1,67 @@
 {
     "members": [
         {
-            "name": "ABC Corporation",
-            "address": "123 Main Street, Freetown",
-            "phone": "+232 123 4567",
-            "website": "https://abccorp.com",
-            "image": "company1.jpg",
+            "name": "TopTech Solutions",
+            "address": "45 Tech Street, Freetown",
+            "phone": "+232 76 123456",
+            "website": "https://toptech.sl",
+            "image": "images/toptech.jpg",
             "membership": "Gold",
-            "additionalInfo": "Specializes in IT solutions"
+            "industry": "Information Technology"
         },
         {
-            "name": "XYZ Manufacturing",
-            "address": "456 Industrial Area, Bo",
-            "phone": "+232 234 5678",
-            "website": "https://xyzmanufacturing.com",
-            "image": "company2.jpg",
+            "name": "Green Earth Landscaping",
+            "address": "12 Garden Avenue, Freetown",
+            "phone": "+232 77 654321",
+            "website": "https://greenearth.sl",
+            "image": "images/greenearth.jpg",
             "membership": "Silver",
-            "additionalInfo": "Leading producer of agricultural equipment"
+            "industry": "Landscaping"
         },
         {
-            "name": "Sierra Leone Telecom",
-            "address": "789 Communication Lane, Freetown",
-            "phone": "+232 345 6789",
-            "website": "https://sierraleonetelecom.com",
-            "image": "company3.jpg",
+            "name": "Ocean View Hotel",
+            "address": "1 Beach Road, Freetown",
+            "phone": "+232 30 987654",
+            "website": "https://oceanview.sl",
+            "image": "images/oceanview.jpg",
+            "membership": "Gold",
+            "industry": "Hospitality"
+        },
+        {
+            "name": "Freetown Shipping Co.",
+            "address": "8 Port Lane, Freetown",
+            "phone": "+232 33 456789",
+            "website": "https://freetownshipping.sl",
+            "image": "images/shipping.jpg",
             "membership": "Platinum",
-            "additionalInfo": "National telecommunications provider"
+            "industry": "Logistics"
         },
         {
-            "name": "Green Energy Solutions",
-            "address": "321 Eco Road, Kenema",
-            "phone": "+232 456 7890",
-            "website": "https://greenenergysl.com",
-            "image": "company4.jpg",
-            "membership": "Gold",
-            "additionalInfo": "Renewable energy specialists"
-        },
-        {
-            "name": "Coastal Shipping",
-            "address": "654 Harbor Way, Lungi",
-            "phone": "+232 567 8901",
-            "website": "https://coastalshipping.com",
-            "image": "company5.jpg",
-            "membership": "Silver",
-            "additionalInfo": "Maritime transport services"
-        },
-        {
-            "name": "Mountain View Hotels",
-            "address": "987 Resort Avenue, Makeni",
-            "phone": "+232 678 9012",
-            "website": "https://mountainviewhotels.com",
-            "image": "company6.jpg",
+            "name": "Sierra Foods",
+            "address": "22 Market Street, Freetown",
+            "phone": "+232 88 112233",
+            "website": "https://sierrafoods.sl",
+            "image": "images/foods.jpg",
             "membership": "Bronze",
-            "additionalInfo": "Luxury accommodations"
+            "industry": "Food Production"
         },
         {
-            "name": "SL Mining Co.",
-            "address": "147 Mineral Drive, Kono",
-            "phone": "+232 789 0123",
-            "website": "https://slmining.com",
-            "image": "company7.jpg",
+            "name": "Mountain Construction",
+            "address": "15 Hilltop Road, Freetown",
+            "phone": "+232 76 998877",
+            "website": "https://mountainconstruction.sl",
+            "image": "images/construction.jpg",
+            "membership": "Silver",
+            "industry": "Construction"
+        },
+        {
+            "name": "City Bank",
+            "address": "3 Finance Street, Freetown",
+            "phone": "+232 30 445566",
+            "website": "https://citybank.sl",
+            "image": "images/bank.jpg",
             "membership": "Platinum",
-            "additionalInfo": "Mineral extraction and processing"
+            "industry": "Banking"
         }
     ]
 }
