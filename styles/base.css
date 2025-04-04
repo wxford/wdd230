@@ -287,3 +287,84 @@ footer {
     font-size: 14px;
     opacity: 0.8;
 }
+/* Directory Page Styles */
+.view-toggle {
+    margin: 1rem 0;
+    text-align: center;
+}
+
+.view-toggle button {
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    cursor: pointer;
+}
+
+.view-toggle button.active {
+    background-color: #333;
+    color: white;
+}
+
+#directory-container {
+    display: grid;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+/* Grid View */
+#directory-container.grid-view {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+/* List View */
+#directory-container.list-view {
+    display: block;
+}
+
+#directory-container.list-view .member-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border: 1px solid #ddd;
+}
+
+#directory-container.list-view .member-card img {
+    width: 100px;
+    margin-right: 1rem;
+}
+
+/* Member Card Styles */
+.member-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.member-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+.member-card h3 {
+    margin: 0 0 0.5rem 0;
+    color: #333;
+}
+
+.member-card p {
+    margin: 0.3rem 0;
+    color: #555;
+}
+
+.member-card a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.member-card a:hover {
+    text-decoration: underline;
+}

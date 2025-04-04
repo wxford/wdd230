@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bockarie Junior Mansaray - Chamber Directory</title>
+    <meta name="description" content="WDD 230 - Chamber of Commerce Directory Page">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+</head>
+
+<body>
+    <header>
+        <h1>Bockarie Junior Mansaray</h1>
+        <img src="images/mag.jpg" alt="Profile Picture">
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="directory.html">Directory</a>
+        <!-- Add other navigation links as needed -->
+    </nav>
+
+    <main>
+        <h2>Member Directory</h2>
+
+        <div class="view-toggle">
+            <button id="grid-view" class="active">Grid View</button>
+            <button id="list-view">List View</button>
+        </div>
+
+        <div id="directory-container" class="grid-view">
+            <!-- Member cards will be inserted here by JavaScript -->
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> | Bockarie Junior Mansaray | Sierra Leone</p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script src="scripts/getdates.js"></script>
+    <script>
+        // Load member data from JSON file
+        fetch('data/members.json')
+            .then(response => response.json())
+            .then(data => {
+                const directoryContainer = document.getElementById('directory-container');
+
+                // Function to create member cards
+                function displayMembers(view) {
+                    directoryContainer.innerHTML = '';
+                    directoryContainer.className = view;
+
+                    data.members.forEach(member => {
+                        const memberElement = document.createElement('div');
+                        memberElement.className = 'member-card';
+
+                        memberElement.innerHTML = `
+                            <img src="images/${member.image}" alt="${member.name}">
+                            <h3>${member.name}</h3>
+                            <p>${member.address}</p>
+                            <p>Phone: ${member.phone}</p>
+                            <p><a href="${member.website}" target="_blank">Website</a></p>
+                            <p>Membership Level: ${member.membership}</p>
+                            ${member.additionalInfo ? `<p>${member.additionalInfo}</p>` : ''}
+                        `;
+
+                        directoryContainer.appendChild(memberElement);
+                    });
+                }
+
+                // Initial display
+                displayMembers('grid-view');
+
+                // Toggle between views
+                document.getElementById('grid-view').addEventListener('click', () => {
+                    displayMembers('grid-view');
+                    document.getElementById('grid-view').classList.add('active');
+                    document.getElementById('list-view').classList.remove('active');
+                });
+
+                document.getElementById('list-view').addEventListener('click', () => {
+                    displayMembers('list-view');
+                    document.getElementById('list-view').classList.add('active');
+                    document.getElementById('grid-view').classList.remove('active');
+                });
+            })
+            .catch(error => console.error('Error loading member data:', error));
+    </script>
+</body>
+
+</html>
