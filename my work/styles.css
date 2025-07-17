@@ -717,3 +717,25 @@ img {
         grid-template-columns: 1fr;
     }
 }
+@media (max-width: 768px) {
+    .main-nav {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+        padding: 10px 0;
+    }
+    
+    .main-nav ul {
+        display: inline-block;
+        padding: 0 15px;
+    }
+    
+    .main-nav li {
+        display: inline-block;
+        margin: 0 10px;
+    }
+    
+    .mobile-nav {
+        display: none; /* Hide the mobile nav if showing main nav */
+    }
+}
